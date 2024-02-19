@@ -1,0 +1,4 @@
+(executable
+ (public_name towerfmt)
+ (name main)
+ (libraries towerfmt))
