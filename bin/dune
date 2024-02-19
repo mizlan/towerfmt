@@ -1,4 +1,4 @@
-(executable
- (public_name towerfmt)
- (name main)
- (libraries towerfmt))
+(executables
+ (public_names towerfmt towerfmt-server)
+ (names main server)
+ (libraries towerfmt dream))
