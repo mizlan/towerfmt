@@ -16,8 +16,7 @@ let home =
   </html>|}
 
 let () =
-  Dream.run ~interface:"0.0.0.0" ~port:443 ~tls:true
-    ~certificate_file:"../certificate.pem" ~key_file:"../privatekey.key"
+  Dream.run ~interface:"0.0.0.0" ~port:6868
   @@ Dream.logger (fun req ->
          match Dream.query req "url" with
          | None -> Dream.html home
