@@ -7,6 +7,11 @@ let home =
       <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
     </head>
     <body>
+      <h1>towerfmt</h1>
+      <p>Instructions: Go to <a href="https://www.chiark.greenend.org.uk/~sgtatham/puzzles/js/towers.html">the Towers website</a>
+        and select a puzzle. Then click the &quot;Link to this puzzle&quot; by game ID.
+        Then copy the URL in the search bar and paste it below.
+      </p>
       <form hx-get="/" hx-swap="afterend">
         <label for="url">url</label>
         <input name="url" />
